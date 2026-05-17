@@ -23,7 +23,7 @@ A clean and minimal To-Do List web app built with HTML, CSS, and vanilla JavaScr
 ## 🚀 Getting Started
 
 ### Option 1 — Live Demo
-👉 [Try it here](https://pranav-gt.github.io/TO-DO-List/) *(update this link after deploying)*
+👉 [Try it here](https://pranav-gt.github.io/TO-DO-List/) 
 
 ### Option 2 — Run Locally
 
