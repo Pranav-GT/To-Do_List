@@ -52,10 +52,11 @@ input{
     background: transparent;
     padding: 10px;
 }
+
 button{
     border: none;
     outline: none;
-    padding: 16px 50px ;    
+    padding: 16px 50px;
     background: hsla(227, 100%, 62%, 0.696);
     color: #fff;
     font-size: 16px;
@@ -99,7 +100,7 @@ ul li.checked{
 }
 
 ul li.checked::before{
-    background-image:url(images/checked.png) ;
+    background-image: url(images/checked.png);
 }
 
 ul li span{
@@ -117,4 +118,126 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
     border-radius: 50%;
+}
+
+
+/* ── 1024px – large tablets / small laptops ── */
+@media screen and (max-width: 1024px) {
+    .todo_app {
+        max-width: 480px;
+        margin: 80px auto 20px;
+        padding: 35px 25px 60px;
+    }
+
+    button {
+        padding: 14px 38px;
+        font-size: 15px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+}
+
+
+/* ── 900px – portrait tablets ── */
+@media screen and (max-width: 900px) {
+    .todo_app {
+        max-width: 420px;
+        margin: 60px auto 20px;
+        padding: 30px 22px 55px;
+    }
+
+    .todo_app h2 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .todo_app h2 img {
+        width: 26px;
+    }
+
+    button {
+        padding: 13px 30px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 10px 8px 10px 44px;
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+    }
+
+    ul li span {
+        width: 36px;
+        height: 36px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
+
+/* ── 640px – mobile phones ── */
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 6px;
+    }
+
+    .todo_app {
+        max-width: 100%;
+        margin: 30px auto 16px;
+        padding: 24px 16px 50px;
+        border-radius: 6px;
+    }
+
+    .todo_app h2 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .todo_app h2 img {
+        width: 22px;
+        margin-left: 8px;
+    }
+
+    .row {
+        padding-left: 14px;
+        margin-bottom: 18px;
+        border-radius: 24px;
+    }
+
+    input {
+        padding: 8px 6px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 13px;
+        border-radius: 24px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 10px 6px 10px 40px;
+    }
+
+    ul li::before {
+        height: 22px;
+        width: 22px;
+        top: 10px;
+        left: 6px;
+    }
+
+    ul li span {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        line-height: 32px;
+    }
 }
